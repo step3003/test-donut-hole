@@ -6,12 +6,6 @@
 cp .env.example .env
 ```
 
-Билдим:
-
-```shell
-docker-compose build
-````
-
 Ставим зависимости
 ```shell
 docker-compose run --rm back composer install
@@ -34,4 +28,6 @@ docker-compose exec db psql -U postgres -c "create database backend;"
 docker-compose exec back ash # Внутри контейнера выполняем как обычно php artisan foo:bar
 # или
 docker-compose exec back php artisan foo:bar
+# например накатить миграции
+docker-compose exec back php artisan migrate
 ```
