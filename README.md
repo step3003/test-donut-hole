@@ -10,7 +10,7 @@ git clone https://github.com/step3003/test-donut-hole.git
 composer update
 ```
 
-Меняем в .env Данные бд
+Меняем в .env данные бд
 
 Делаем миграции
 ```shell
