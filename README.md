@@ -11,3 +11,8 @@ composer update
 ```
 
 Меняем в .env Данные бд
+
+Делаем миграции
+```shell
+php artisan migrate
+```
